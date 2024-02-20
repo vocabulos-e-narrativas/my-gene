@@ -1,0 +1,786 @@
+:root {
+    --dark-yellow: #AA8344;
+    --light-yellow: #F7C66D;
+    --dark-blue: #3C4B6C;
+    --light-blue: #7690B7;
+    --dark-green: #596C3B;
+    --light-green: #A8BD7E;
+    --gray: #4F4F4F;
+}
+
+body {
+    margin: 0;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.text-dark-yellow {
+    color: var(--dark-yellow) !important;
+}
+
+.text-light-yellow {
+    color: var(--light-yellow) !important;
+}
+
+.bg-dark-yellow {
+    background-color: var(--dark-yellow) !important;
+}
+
+.bg-light-yellow {
+    background-color: var(--light-yellow) !important;
+}
+
+.text-dark-blue {
+    color: var(--dark-blue) !important;
+}
+
+.text-light-blue {
+    color: var(--light-blue) !important;
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue) !important;
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue) !important;
+}
+
+.text-dark-green {
+    color: var(--dark-green) !important;
+}
+
+.text-light-green {
+    color: var(--light-green) !important;
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green) !important;
+}
+
+.bg-light-green {
+    background-color: var(--light-green) !important;
+}
+
+.text-gray {
+    color: var(--gray) !important;
+}
+
+
+
+.mygene-loading {
+    background: linear-gradient(to right, #000B2A, #003D7F);
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.main-content {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.viewport {
+    width: 3476px;
+    /* Largura da imagem */
+    height: 1968px;
+    /* Altura da imagem */
+    background-image: url('../images/cidade-01-min.jpeg');
+    background-size: cover;
+    /* Ou "contain", dependendo do efeito desejado */
+    cursor: grab;
+    /* Altera o cursor para uma mão fechada ao passar sobre a div de visualização */
+}
+
+.frame-top {
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    left: 34%;
+}
+
+.waypoint-casa {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    left: 145.5%;
+    /* left: 2793px; */
+    top: 88%;
+    /* top: 850px; */
+    width: 4%;
+}
+
+.waypoint-biblioteca {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    left: 117%;
+    /* left: 2248px; */
+    top: 39%;
+    /* top: 387px; */
+    width: 4%;
+}
+
+.waypoint-casa img,
+.waypoint-biblioteca img {
+    width: 100%;
+}
+
+.frame-top img {
+    width: 50%;
+}
+
+.frame-bottom img {
+    width: 25%;
+}
+
+.frame-bottom {
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    left: 43%;
+    bottom: 0;
+}
+
+
+.marca-de-agua {
+    width: 70%;
+}
+
+.room-container {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.room {
+    width: 100%;
+    height: 100vh;
+}
+
+.plus18 {
+    position: absolute;
+    top: 36%;
+    left: 15%;
+    width: 31%;
+    z-index: 3;
+}
+
+.less18 {
+    position: absolute;
+    top: 36%;
+    left: 51%;
+    width: 31%;
+    z-index: 3;
+}
+
+.my-gene-city {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 400px !important;
+    height: 290px !important;
+    background-color: #fff;
+    z-index: 99;
+    top: 26%;
+    left: 18%;
+}
+
+.to-city {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 345px !important;
+    height: 121px !important;
+    background-color: #fff;
+    z-index: 99;
+    top: 72%;
+    left: 56%;
+}
+
+.library1 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 12% !important;
+    height: 82% !important;
+    background-color: red;
+    z-index: 99;
+    top: 10%;
+    left: 7%;
+    overflow-y: hidden;
+}
+
+.library-transition-1 {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 11.5%;
+    left: -50.5%;
+    animation: slideAnimation1 2s ease forwards;
+}
+
+.close-library1 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 122px !important;
+    height: 174px !important;
+    background-color: red;
+    z-index: 99;
+    top: 41%;
+    left: 69%;
+    overflow-y: hidden;
+}
+
+@keyframes slideAnimation1 {
+    from {
+        left: -50.5%
+    }
+
+    to {
+        left: 7.2%;
+    }
+}
+
+
+.library2 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 8% !important;
+    height: 55% !important;
+    background-color: purple;
+    z-index: 99;
+    top: 28%;
+    left: 19%
+}
+
+.library3 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 7% !important;
+    height: 40% !important;
+    background-color: yellow;
+    z-index: 99;
+    top: 37%;
+    left: 27%;
+}
+
+.library4 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 12% !important;
+    height: 82% !important;
+    background-color: red;
+    z-index: 99;
+    top: 11%;
+    left: 81%;
+}
+
+.library5 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 8% !important;
+    height: 55% !important;
+    background-color: purple;
+    z-index: 99;
+    top: 28%;
+    left: 73%;
+}
+
+.library6 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 7% !important;
+    height: 40% !important;
+    background-color: yellow;
+    z-index: 99;
+    top: 37%;
+    left: 66%;
+}
+
+
+.book1 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 11% !important;
+    height: 62% !important;
+    background-color: yellow;
+    z-index: 99;
+    top: 23%;
+    left: 12.5%;
+}
+
+.book2 {
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 11% !important;
+    height: 62% !important;
+    background-color: blue;
+    z-index: 99;
+    top: 23%;
+    left: 25%;
+}
+
+.book3 {
+    rotate: -8deg;
+    display: block;
+    opacity: 0%;
+    position: absolute;
+    width: 13% !important;
+    height: 62% !important;
+    background-color: green;
+    z-index: 99;
+    top: 22%;
+    left: 38%;
+}
+
+.pulsing {
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.book-modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.book {
+    position: absolute;
+    top: 8%;
+    left: 16%;
+    width: 73%;
+    height: 86%;
+    z-index: 999;
+}
+
+.book-modal-close {
+    cursor: pointer;
+    position: absolute;
+    width: 81px;
+    height: 55px;
+    top: 11%;
+    left: 85%;
+    z-index: 9999;
+}
+
+.book-wrapper {
+    position: absolute;
+    width: 64%;
+    height: 76%;
+    top: 11%;
+    left: 19%;
+    z-index: 9999;
+}
+
+
+.book-icon {
+    width: 2.75rem !important;
+    height: auto !important;
+}
+
+.book-icon-big {
+    width: 5.75rem !important;
+    height: auto !important;
+}
+
+.book-icon-medium {
+    width: 3.75rem !important;
+    height: auto !important;
+}
+
+.book-icon-small {
+    width: 1.75rem;
+    height: auto;
+}
+
+.book-player {
+    width: 85% !important;
+    height: auto !important;
+}
+
+.book-modal-yellow button {
+    background-color: var(--light-yellow);
+    color: var(--dark-yellow);
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    height: 80px;
+}
+
+.book-modal-blue button {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 15px;
+    width: 58%;
+    height: 60px;
+}
+
+.book-modal-green button {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    height: 80px;
+}
+
+.book-modal-blue .subBtn1 {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 10px;
+    width: 110% !important;
+    height: 80%;
+}
+
+.book-modal-blue .subBtn2 {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 10px;
+    width: 110% !important;
+    height: 80%;
+}
+
+.subBtn1 h5 {
+    font-size: 16px;
+}
+
+.subBtn2 h5 {
+    font-size: 13px;
+}
+
+.book-modal-yellow button.active {
+    background-color: var(--dark-yellow);
+    color: var(--light-yellow);
+}
+
+.book-modal-blue button.active {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+.book-modal-green button.active {
+    background-color: var(--dark-green);
+    color: var(--light-green);
+}
+
+.book-modal-blue ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.book-modal-blue ul li::before {
+    content: '\2022';
+    /* Código Unicode para o caractere de bullet */
+    color: var(--light-blue);
+    /* Cor da bolinha */
+    display: inline-block;
+    width: 1em;
+    /* Largura da bolinha, ajuste conforme necessário */
+    margin-left: -1em;
+    /* Espaçamento para alinhar a bolinha à esquerda do texto */
+}
+
+
+.book-modal-green .book-icon-small {
+    width: 0.75rem;
+    height: auto;
+}
+
+.line-height-1 {
+    line-height: 0.1;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
+.my-p-3 {
+    padding: 1rem 3rem;
+}
+
+.my-p-5 {
+    padding: 4rem 1rem;
+}
+
+.my-p-6 {
+    padding: 5rem 1rem;
+}
+
+.my-my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.my-px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.my-pb-1 {
+    padding-bottom: 0.25rem;
+}
+
+@media screen and (max-width: 1800px) {
+
+    .waypoint-biblioteca {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        left: 147.5%;
+        /* left: 2793px; */
+        top: 53%;
+        /* top: 850px; */
+        width: 4%;
+    }
+
+    .waypoint-casa {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        left: 182.5%;
+        /* left: 2248px; */
+        top: 117%;
+        /* top: 387px; */
+        width: 4%;
+    }
+
+    .my-p-5 {
+        padding: 1rem 1rem;
+    }
+
+    .my-p-6 {
+        padding: 1rem 1rem;
+    }
+
+    .my-my-4 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .book-modal-blue button {
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+        border: none;
+        border-radius: 15px;
+        width: 58%;
+        height: 50px;
+    }
+
+    .subBtn2 h5 {
+        font-size: 10px;
+    }
+
+    .book-modal-blue ul {
+        list-style-type: none;
+        font-size: 16px;
+    }
+
+    .book-icon-small {
+        width: 1.1rem;
+        height: auto;
+    }
+
+    #blueContent5 h5 {
+        font-size: 12px;
+    }
+
+    .book-modal-green button {
+        background-color: var(--light-green);
+        color: var(--dark-green);
+        border: none;
+        border-radius: 25px;
+        width: 80%;
+        height: 60px;
+    }
+
+    .line-height-1 p {
+        margin-bottom: 0.6rem;
+    }
+
+    #greenContent2 h5 {
+        font-size: 17px;
+    }
+
+    .my-p-3 {
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    .book-icon {
+        width: 1.75rem !important;
+        height: 1.75rem !important;
+    }
+
+    .book-icon-big {
+        width: 3.75rem !important;
+        height: auto !important;
+    }
+
+    .book-icon-medium {
+        width: 1.75rem !important;
+        height: auto !important;
+    }
+
+    .book-icon-small {
+        width: 0.75rem;
+        height: auto;
+    }
+
+    .my-p-5 {
+        padding: 0rem 1rem;
+    }
+
+    .my-p-6 {
+        padding: 0rem 1rem;
+    }
+
+    .waypoint-casa {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        left: 218.5%;
+        /* left: 2793px; */
+        top: 158%;
+        /* top: 850px;*/
+        width: 4%;
+    }
+
+    .waypoint-biblioteca {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        left: 176%;
+        /* left: 2248px; */
+        top: 72%;
+        /* top: 387px;*/
+        width: 4%;
+    }
+
+    .book-modal-blue button {
+        background-color: var(--light-blue);
+        color: var(--dark-blue);
+        border: none;
+        border-radius: 15px;
+        width: 82%;
+        height: 35px;
+    }
+
+    .book-modal-yellow button {
+        border-radius: 20px;
+        width: 80%;
+        height: 50px;
+    }
+
+    .my-my-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .my-px-4 {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .subBtn1 h5 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .subBtn2 h5 {
+        font-size: 8px;
+    }
+
+    .book-modal-blue .subBtn1 {
+        border-radius: 10px;
+        width: 120%;
+        height: 100%;
+    }
+
+    .book-modal-blue .subBtn2 {
+        border-radius: 10px;
+        width: 120%;
+        height: 70%;
+    }
+
+    .book-modal-blue ul {
+        font-size: 12px;
+    }
+
+    #blueContent4 h4 {
+        font-size: 1rem;
+    }
+
+    #blueContent5 h5 {
+        font-size: 10px;
+    }
+
+    .my-pb-1 {
+        padding-bottom: 0;
+    }
+
+    .my-p-3 {
+        padding: 1rem 0rem;
+    }
+}
